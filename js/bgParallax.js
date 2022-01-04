@@ -1,5 +1,3 @@
-//Cet script permet d'avoir un effet de parallax sur la section de contact 
-
 (function(){
 var propParallax = {
 	seccion: document.querySelector('.parallax'),

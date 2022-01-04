@@ -2,12 +2,10 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  /* para que el pading/margin no afecten o no me cambie el ancho o alto de mis elementos*/
 }
 
 body {
   font-size: 16px;
-  /*para calcular las medidas en REM del sitio web*/
   font-family: "Playfair Display", serif;
   color: #303133;
 }
@@ -33,7 +31,6 @@ a:hover {
   opacity: 50%;
 }
 
-/********************************************************/
 .titulo-seccion h2 {
   font-size: 3.125rem;
   font-weight: 400;
@@ -46,30 +43,6 @@ a:hover {
 .titulo-seccion p {
   font-size: 1.25rem;
   color: #777;
-}
-
-/*imagen del banner principal que se abren en grande y eso tiene que ver con el efecto lightbox de JS*/
-.imagen-modal {
-  width: 90%;
-  max-width: 1000px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  transition: opacity 0.3s ease;
-}
-
-.imagen-modal + i {
-  /*CRUZ DE CIERRE DE LA IMAGEN QUE SE ABRE EN GRANDE*/
-  position: absolute;
-  top: 2%;
-  right: 1%;
-  color: #303133;
-  font-size: 2.25rem;
-  background: #fff;
-  display: inline-block;
-  padding: 0.75rem 0.875rem;
-  cursor: pointer;
 }
 
 header .menu-bar-pc {
@@ -135,7 +108,6 @@ header .menu-bar-pc .top-redes a {
   position: fixed;
   top: 5.875rem;
   left: -80%;
-  /*oculto, colocado par default*/
   background: #fff;
   text-align: center;
   padding: 1.25rem 2.25rem;
@@ -168,7 +140,6 @@ header .menu-bar-pc .top-redes a {
 }
 
 .portada .col {
-  /*para colocar una a la izquierda y una a la derecha*/
   width: 50%;
   background: #141618;
   color: #fff;
@@ -251,39 +222,14 @@ header .menu-bar-pc .top-redes a {
   background-image: url("../img/portada-3.jpg");
 }
 
-.portada .col .foto-full .overlay {
-  /*es como la paca invisible que esta ubicado sobre las imagenes, en donde parece la cruz enmedio*/
-  opacity: 0;
-  width: 100%;
-  height: 100%;
-  background: fade(#141618, 40%);
-  position: relative;
-  cursor: pointer;
-  transition: all 0.3s ease;
-}
-
-.portada .col .foto-full .overlay:hover {
-  opacity: 1;
-}
-
-.portada .col .foto-full .overlay i {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  font-size: 1.5625rem;
-}
-
 .nosotros {
   padding: 5.625rem 0;
 }
 
 .nosotros .container {
   display: flex;
-  /*para que las columnas se coloquen uno a la par de la otra*/
   flex-direction: row;
   flex-wrap: wrap;
-  /*para que cuando las columnas ya no quepan una al lado de la otra, se pongan una encima de la otra*/
 }
 
 .nosotros .container .col.izq {
@@ -311,12 +257,10 @@ header .menu-bar-pc .top-redes a {
 }
 
 .chef .container {
-  /*para que las columnas ses pongan una a la par de la otra si ya no caben*/
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   align-items: center;
-  /*para que los elementos dentro de container esten centrados*/
 }
 
 .chef .container .col {
@@ -326,7 +270,6 @@ header .menu-bar-pc .top-redes a {
 .chef .container .col.izq {
   box-shadow: 0px 9px 32px -1px rgba(0, 0, 0, 0.5);
   overflow: hidden;
-  /*que me ocute todo lo que sobre mas alla la anchura de la columna, todo lo que se salga de la columna quiero que lo oculte, porque lo hicimos de 300px para poder hacer el slider pero debems hacer este hiden para arreeglarlo */
 }
 
 .chef .container .col .titulo-seccion {
@@ -346,15 +289,12 @@ header .menu-bar-pc .top-redes a {
 }
 
 .chef .container .col .titulo-seccion p:last-child {
-  /*que el ultimo hijo de los parrafos de la seccion 'chef' no tenga padding abajo */
   padding-bottom: 0;
 }
 
 .chef .container .col .slider {
   width: 300%;
-  /*porque hay 3 fotos cada foto=100% esto tiene que ver con el codigo JS para el slider*/
   display: flex;
-  /*para que cada una de los div de las fotos se coloquen uno al lado del otro*/
 }
 
 .chef .container .col .slider .slide {
@@ -393,7 +333,6 @@ header .menu-bar-pc .top-redes a {
   font-family: "Poppins", serif;
   letter-spacing: 0.1em;
   text-transform: uppercase;
-  /*para que las etiqueta 'postre' y 'menu' siempre se muestren en mayusculas*/
   list-style: none;
   display: flex;
   justify-content: center;
@@ -404,18 +343,12 @@ header .menu-bar-pc .top-redes a {
   padding: 0 1.4375rem 1.125rem 1.4375rem;
   display: block;
   cursor: pointer;
-  /*al pasar el mouse sobre las etiquetas, se coloque la manita de seleccion*/
   transition: all 0.3s ease;
   border-bottom: 2px solid transparent;
-  /*va a pasar de ser transparente a tener el borde dorado, el borde de abajo de cada etiqueta va a cambiar a dorado una vez que lo selecciones gracias al 'hover' codificado aqui abajo*/
 }
 
 .menu-platos .container .contenedor-menu .encabezado li a:hover {
   color: #b4975a;
-}
-
-.menu-platos .container .contenedor-menu .encabezado li.active {
-  /*los 'li' que tengan los enlaces activados (osea que le den click) se les va colocar un color dorado y un borde de dos px dorado*/
 }
 
 .menu-platos .container .contenedor-menu .encabezado li.active a {
@@ -432,25 +365,19 @@ header .menu-bar-pc .top-redes a {
 }
 
 .menu-platos .container .contenedor-menu .contenido > div {
-  /*que seleccion los hijos directos del div osea div='postre' y div='cafes'*/
   display: none;
-  /*que no se muestren esos hijos directoss*/
   transition: all 0.3s ease;
 }
 
 .menu-platos .container .contenedor-menu .contenido .active {
   display: block;
-  /*y de esos hijos directos (div='postre' y div='cafes'), que solo el que tenga la clase active que se muestre, osea que se muestre nada mas uno de los dos menus completos, ya sea el de cafes o el de menus, segun la selecion activa o no*/
 }
 
 .menu-platos .container .contenedor-menu .contenido .item {
-  /*stilos a los items que estan dentro del menu*/
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  /*para que cuando no quepan se pongan uno encima de otro*/
   align-items: center;
-  /*para que se alien VERTICALMENTE*/
   padding: 2.25rem 0;
   border-bottom: 1px solid #eaeaea;
 }
@@ -615,7 +542,6 @@ header .menu-bar-pc .top-redes a {
 
 .contacto .formulario .formulario_contacto input[type="submit"]:hover {
   background: #977c44;
-  /* (darken) propriedad css que permite oscureser el elemento cuando el mouse pase enciam del elemento*/
 }
 
 footer {
@@ -647,6 +573,7 @@ footer .bottom-redes a:hover {
   }
 }
 
+/*******************************************************************************************************/
 @media all and (max-width: 1199px) {
   .main .portada .col .foto {
     display: none;
@@ -656,6 +583,7 @@ footer .bottom-redes a:hover {
   }
 }
 
+/*******************************************************************************************************/
 @media all and (max-width: 980px) {
   .main .nosotros .container .col.izq {
     width: 100%;
@@ -678,16 +606,12 @@ footer .bottom-redes a:hover {
     margin-bottom: 2.25rem;
   }
   .main .contacto .datos .container .blurb:last-child {
-    /*ultimo hijo de los bllurd que o tenga margen abajo*/
     margin-bottom: 0;
   }
 }
 
-/*Quarto quiebre de los jquery*/
+/*******************************************************************************************************/
 @media all and (max-width: 800px) {
-  header {
-    /*para que appartir de esa pantalla ya me aparezca el menu de hamburguesa*/
-  }
   header .menu-bar-pc {
     display: none;
   }
@@ -716,7 +640,7 @@ footer .bottom-redes a:hover {
   }
 }
 
-/*Quinto quiebre de nuestro jquery*/
+/*******************************************************************************************************/
 @media all and (max-width: 580px) {
   .titulo-seccion h2 {
     font-size: 2rem;

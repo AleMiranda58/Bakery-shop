@@ -1,5 +1,3 @@
-//Cet script permet d'avoir un slider des images qui se déplacent à chaque 3s
-
 (function (){ 
 
 	var propSlider = {

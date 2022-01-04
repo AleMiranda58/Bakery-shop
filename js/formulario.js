@@ -1,6 +1,3 @@
-//material desing 
-//Validation de formulario
-
 (function(){
 
 var propFormulario = {

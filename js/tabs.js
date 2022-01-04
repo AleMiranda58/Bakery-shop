@@ -1,5 +1,3 @@
-//Cet script permet d'afficher le contenu du menu à partir d'un event click
-
 (function(){
 
 var propTabs = {

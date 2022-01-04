@@ -1,5 +1,3 @@
-//Cet script permet le fonctinnement du burger menu pour mobile et tablette
-
 var propMenu = {
 	burger_menu: document.getElementById('burger_menu'),
 	elem_menu: document.querySelectorAll('#slideMenu .menu-principal a'),

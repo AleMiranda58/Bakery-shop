@@ -1,5 +1,3 @@
-//Cet script permet d'avoir un effect de scroll vers les divers secions du site web
-
 var propScroll = {
 	scroll_suave: document.getElementsByClassName('scroll-suave'),
 	volver_arriba: document.getElementsByClassName('volver-arriba'),
